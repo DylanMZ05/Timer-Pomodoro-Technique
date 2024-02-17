@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Technique</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article id="app">
+      <header id="time">
+        <h1>Timer<br>Pomodoro Technique</h1>
+        <b>by Dylan Mazur Zgainer</b>
+        <div id="value"></div>
+        <div id="taskName"></div>
+      </header>
+
+      <section class="tasks-container">
+
+        <div class="form">
+          <form action="" id="form">
+            <div class="txt-cont">
+              <input type="text" id="itTask" />
+            </div>
+            <div class="button-container">
+              <input type="submit" id="bAdd" class="primer-boton" value="Agregar tarea" />
+              <button id="pauseButton">Pausar Tiempo</button>
+              <button id="resumeButton">Reanudar Tiempo</button>
+              <button id="stopButton">Detener Tiempo</button>
+            </div>
+          </form>
+        </div>
+        <div id="tasks">
+          <div class="task"></div>
+        </div>
+      </section>
+    </article>
+
+    <script src="main.js"></script>
+  </body>
+</html>

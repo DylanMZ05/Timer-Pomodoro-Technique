@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(56, 26, 56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+b {
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+#app {
+  background-color: rgb(255, 255, 255);
+  width: 70vw;
+  max-width: 600px;
+  margin: 0 auto;
+  border: solid 1px #ccc;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#time {
+  text-align: center;
+  padding: 20px 0;
+}
+#time #value {
+  font-size: 48px;
+  font-weight: bolder;
+  margin-top: 30px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: solid 1px #43076e;
+  width: 60vw;
+  max-width: 550px;
+  border-radius: 16px;
+  background-color: #838383;
+}
+button,
+input[type="submit"] {
+  border: none;
+  background-color: #3d0066;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 5px;
+  width: 130px;
+
+  margin: 15px 10px;
+}
+
+#tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+.task {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.task .completed {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.done {
+  display: inline-block;
+  padding: 5px;
+  background-color: #ccc;
+  border-radius: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.txt-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
