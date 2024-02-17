@@ -61,11 +61,14 @@ input[type="submit"] {
   background-color: #3d0066;
   color: rgb(255, 255, 255);
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 50px;
+  border: 1px solid #000000a1;
   width: 130px;
-
+  box-shadow: 2px 2px 3px #000;
+  
   margin: 15px 10px;
 }
+
 
 #tasks {
   display: flex;
@@ -102,4 +105,13 @@ input[type="submit"] {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.boton {
+  transition: transform 0.5s ease; /* Transición de 1 segundo con un efecto de suavizado */
+}
+
+.boton:hover {
+  background-color: #6810a7;
+  transform: scale(1.02);
 }
