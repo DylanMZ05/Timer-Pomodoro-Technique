@@ -9,32 +9,41 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <article id="app">
-      <header id="time">
+    <header class="portfolio">
+      <a href="https://dylanmz05.github.io/CV-es/">
+          <img src="media/logo-no-fondo.png" alt="">
+          <h3>Portfolio</h3>
+      </a>
+    </header>
+
+    <article>
+      <section id="app">
+        <header id="time">
         <h1>Timer<br>Pomodoro Technique</h1>
-        <b>by Dylan Mazur Zgainer</b>
-        <div id="value"></div>
-        <div id="taskName"></div>
-      </header>
+          <b>by Dylan Mazur Zgainer</b>
+          <div id="value"></div>
+          <div id="taskName"></div>
+        </header>
 
-      <section class="tasks-container">
+        <section class="tasks-container">
 
-        <div class="form">
-          <form action="" id="form">
-            <div class="txt-cont">
-              <input type="text" id="itTask" />
-            </div>
-            <div class="button-container">
-              <input type="submit" id="bAdd" class="boton" value="Agregar tarea" />
-              <button id="pauseButton" class="boton">Pausar Tiempo</button>
-              <button id="resumeButton" class="boton">Reanudar Tiempo</button>
-              <button id="stopButton" class="boton">Detener Tiempo</button>
-            </div>
-          </form>
-        </div>
-        <div id="tasks">
-          <div class="task"></div>
-        </div>
+          <div class="form">
+            <form action="" id="form">
+              <div class="txt-cont">
+                <input type="text" id="itTask" />
+              </div>
+              <div class="button-container">
+                <input type="submit" id="bAdd" class="boton" value="Agregar tarea" />
+                <button id="pauseButton" class="boton">Pausar Tiempo</button>
+                <button id="resumeButton" class="boton">Reanudar Tiempo</button>
+                <button id="stopButton" class="boton">Detener Tiempo</button>
+              </div>
+            </form>
+          </div>
+          <div id="tasks">
+            <div class="task"></div>
+          </div>
+        </section>
       </section>
     </article>
 

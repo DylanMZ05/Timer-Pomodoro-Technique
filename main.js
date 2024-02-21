@@ -38,7 +38,7 @@ function renderTasks() {
         <div class="completed">${
           task.completed
             ? "<span class='done'>Done</span>"
-            : `<button class="start-button" data-id="${task.id}">Start</button></div>`
+            : `<button class="start-button boton" data-id="${task.id}">Start</button></div>`
         }
             <div class="title">${task.title}</div>
         </div>`;
@@ -51,14 +51,13 @@ function renderTasks() {
     startButton.addEventListener("click", () => {
       if (!timer) {
         startButtonHandler(startButton.getAttribute("data-id"));
-        startButton.textContent = "In progress...";
       }
     });
   });
 }
 
 function startButtonHandler(id) {
-  time = 25 * 60;
+  time = 0.1 * 60;
   current = id;
   const taskId = tasks.findIndex((task) => task.id === id);
   document.querySelector("#time #taskName").textContent = tasks[taskId].title;
@@ -142,3 +141,4 @@ function resumeTimer() {
     timerBreak = setInterval(timerBreakHandler, 1000);
   }
 }
+

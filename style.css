@@ -1,13 +1,55 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(56, 26, 56);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  box-shadow: inset 0px 0px 10px #000;
+
   margin: 0;
   padding: 0;
   height: 100vh;
   width: 100vw;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: #04050c;
+  
+  width: 100vw;
+  height: 60px;
+
+  box-shadow: 0px 0px 10px #000;
+}
+
+.portfolio a {
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  background-color: #090c31;
+  padding: 5px 15px;
+  margin-right: 7vw;
+  border-radius: 24px;
+  box-shadow: 2px 2px 0px #000;
+
+  text-decoration: none;
+}
+
+.portfolio h3 {
+  color: #fff;
+  margin: 0;
+  margin-left: 5px;
+}
+
+header img {
+  width: 40px;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 h1 {
@@ -24,7 +66,7 @@ b {
   background-color: rgb(255, 255, 255);
   width: 70vw;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 50px auto;
   border: solid 1px #ccc;
   padding: 20px;
   border-radius: 16px;
